@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href ="css/style.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="asset/foto.jpg" style="width:45%;" class="w3-round"><br><br>
+            <h4><b>MY PORTFOLIO</b></h4>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#Portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>Portfolio</a>
+            <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>About</a>
+            <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+        </div>
+        <div class="w3-panel w3-large">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+     <!-- Header -->
+     <header id="portfolio">
+        <a href="#"><img src="asset/foto.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><iclass="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <a class="anchorpage" id="Portfolio">&nbsp;</a>
+            <h1><b>My Portfolio</b></h1>
+            <div class="w3-section w3-bottombar w3-padding-16"></div>
+            <br>
+                <h2>Halo, Selamat Datang di Portfolio ku!</h2>
+                <br>
+                <p>Disini aku akan share segala aktifitas dan hasil karya ku selama 1 tahun kebelakang</p>
+            </div>
+            <!-- First Photo Grid-->
+             <div class="w3-row-padding">
+             <div class="w3-third w3-container w3-margin-bottom">
+             <img src="asset/pln.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+             <div class="w3-container w3-white">
+                <p><a href="aplikasiundangan.html">Membuat Aplikasi Undangan Pengadaan Barang dan Jasa</a></p>
+                <p>Membuat frontend halaman undangan perusahaan terhadap pengadaan barang dan jasa terhadap perusahaan lain.
+                </p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="asset/shiftacademy.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><a href="latihanwebsite.html">Latihan Website Shift Academy</a></p>
+                <p>Mempelajari materi baru tentang HTML & CSS, dan diaplikasikan dengan membuat website tersebut sebagai portfolio dan belajar.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container">
+            <img src="asset/ngodingacademy.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><a href="ngodingacadmey.html">Ngoding Acadmey</a></p>
+                <p>Latihan punya saya pribadi untuk mengasah kembali coding yang sudah saya pelajari sebelumnya.</p>
+            </div>
+            </div>
+            <div>
+                <a class="anchorpage" id="About">&nbsp;</a>
+                <div class="w3-section w3-bottombar w3-padding-16"></div>
+                <h1><b>About</b></h1>
+                <p>Perkenalkan, nama saya Gregorius Kevin Ekatama Putra, saya mahasiswa semester akhir, saya sangat suka mengeksplor hal baru, saya juga berteman dengan siapa saja</p>
+                <br>
+                <p>Selain itu, saya juga sangat memperhatikan hal kecil yang membuat saya tertarik.</p>
+            </div>
+            <div>
+                <a class="anchorpage" id="Contact">&nbsp;</a>
+                <div class="w3-section w3-bottombar w3-padding-16"></div>
+                <h1><b>Contact</b></h1>
+                <p>Untuk mengethaui kontak saya, bisa menghubungi nomor dibawah ini:</p>
+                <ul>
+                    <li>Email: gregoriuskevin98@gmail.com</li>
+                    <li>No HP: 082246210102</li>
+                </ul>
+            </div>
+        </div>
+</header>
+</div>
+</body>
+</html>
